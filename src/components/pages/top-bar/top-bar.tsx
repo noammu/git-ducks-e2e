@@ -1,6 +1,5 @@
 import type React from 'react';
 import type { ApiUser } from '../../../model/api-user';
-import { UserInfo } from './user-info/user-info';
 import { ConnectButton } from './connect-button/connect-button';
 import { Techs } from '../overview/techs/techs';
 import { Connections } from '../../connections/connections';
@@ -29,14 +28,6 @@ export const TopBar: React.FC<TopBarProps> = ({ className, user }) => {
                     <span className={styles.members}>Member since 1984</span>
                     <Connections count={user?.followers} />
                 </div>
-
-                <UserInfo
-                    organization={user?.organization}
-                    location={user?.location}
-                    email={user?.email}
-                    twitter={user?.twitter}
-                    url={user?.url}
-                />
 
                 <Techs technologies={user?.techs?.technologies} />
             </div>
