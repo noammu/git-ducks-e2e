@@ -2,6 +2,7 @@
 
 .root {
     width: 215px;
+    background-color: var(--primary-light);
 }
 
 .button {
@@ -11,7 +12,7 @@
     margin: 16px 0;
     color: var(--primary-light);
 
-    background: var(--primary);
+    background: var(--color-text-primary);
     border: 1px solid rgba(78, 183, 245, 0.2);
     border-radius: 30px;
 
